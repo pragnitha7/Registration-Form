@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign-Up</title>
+	style
+		include ../static/style.css
+</head>
+
+<body>
+	<!-- | #{content}
+	|<h1>This is plain HTML usin PUG</h1> -->
+	<div class="b">
+		<div>
+			<h1>Sign Up</h1>
+		</div>
+		<hr>
+		<form action="/" id="regform" method="POST" onsubmit="validateForm(event)">
+			<div class="box">
+
+				<div>
+					<label for="name">Name </label>
+					<input type="text" placeholder="enter your name..." name="pname" id="pname" required>
+				</div>
+				<div>
+
+					<label for="email">E-Mail </label>
+					<input type="email" placeholder="enter your mail..." name="email" id="email" required>
+				</div>
+				<div>
+					<label for="number">Mobile Number </label>
+					<input type="number" placeholder="enter your number..." name="number" id="number" required>
+				</div>
+				<!-- <label for="pic">Profile Pic</label>
+			<div><input type="file" placeholder="submit a profile pic" name="pic" id="pic"></div> -->
+				<div>
+					<label for="username">Create UserName </label>
+					<input type="text" placeholder="create username" name="username" id="username" required>
+				</div>
+				<div>
+					<label for="crpass">Create Password </label>
+					<input type="password" placeholder="create password" name="crpass" id="crpass" required>
+				</div>
+				<div>
+					<label for="cnpass">Confirm Password </label>
+
+					<input type="password" placeholder="confirm password" name="cnpass" id="cnpass" required>
+				</div>
+				<div>
+					<input style=" background-color:rgb(96, 138, 138);" type="checkbox" required> I agree to all the
+					terms and conditions
+				</div>
+				<div>
+					<DIV id="remark"></DIV>
+					<button type="submit">Register Now</button>
+				</div>
+
+
+			</div>
+		</form>
+	</div>
+	script
+		include ../static/script.js
+</body>
+
+</html>

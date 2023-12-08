@@ -1,0 +1,74 @@
+body {
+
+	height: 97vh;
+	width: 97vw;
+	color: black;
+}
+
+div.b::before {
+	background: url('https://www.officelovin.com/wp-content/uploads/2020/09/visma-software-office-23.jpg') no-repeat center center/cover;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.6;
+}
+
+
+.box {
+	display: flex;
+	flex-direction: column;
+	height: 70vh;
+	float: right;
+	width: 45%;
+	justify-content: space-between;
+	/*border: 2px solid black;*/
+	align-items: flex-start;
+	margin-top: 20px;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+}
+
+
+
+h1 {
+	display: block;
+	font-size: 40px;
+	float: right;
+	width: 42%;
+	font-weight: bolder;
+}
+
+button {
+	background-color: beige;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px 1px rgb(21, 21, 10);
+	border: 2px solid rgb(14, 12, 12);
+	height: 40px;
+	width: 135px;
+	animation: backwards;
+}
+
+hr {
+	width: 55%;
+	height: 1px;
+	border-width: 0;
+	float: right;
+	margin-right: 50px;
+	color: rgb(16, 16, 16);
+	background-color: black;
+}
+
+input {
+	box-shadow: 1px 1px 1px 1px rgb(7, 35, 44);
+	border: 2px solid black;
+	border-radius: 4px;
+	margin-left: 4px;
+}
+
+#remark {
+	color: red;
+}
