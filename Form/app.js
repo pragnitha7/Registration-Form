@@ -2,8 +2,8 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const mongoose = require("mongoose");
-mongoose.connect('mongodb://localhost/register', {useNewUrlParser: true});
-const port = 80;
+mongoose.connect('mongodb://localhost/register');
+const port = 8000;
 const fs = require("fs");
 
 
@@ -53,5 +53,5 @@ app.post('/' , (req,res)=>{
 
 // START THE SERVER
 app.listen(port , ()=>{
-	console.log(`Application started succesfully on port ${port}`)
+	console.log(`Server is running on http://localhost:${port}`)
 });
