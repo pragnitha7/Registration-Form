@@ -11,7 +11,7 @@ const fs = require("fs");
 const contactSchema = new mongoose.Schema({
 	name: String,
 	email: String,
-	number: String,
+	number: Number,
 	username: String,
 	crpass: String,
   });
@@ -44,11 +44,7 @@ app.post('/' , (req,res)=>{
        }).catch(()=>{
        res.status(400).send('item was not saved to the databse')
 	   })
-	//if we want to gather the info in text file
-	// let output = `The name is ${pname} , email ${email} , mobile-number ${number} , username ${username} password ${crpass} `
-	// fs.writeFileSync('output.txt', output)
-	// const params = {'message':"Your form has been submitted successfully ☺️"}
-	// res.status(200).render('index.pug' , params);
+	
 });
 
 // START THE SERVER
